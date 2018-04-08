@@ -1,0 +1,20 @@
+<div class="header">
+    <h1 class="left">LOGIN</h1>
+    <h1 class="right">AIT MESSENGER</h1>
+</div>
+<div class="login_reg">
+    <h1>Please log in:</h1><br>
+    {{#if err}}
+        <em>Username or password is invalid</em><br><br>
+    {{/if}}
+    <form class="sign_in" action="/login" method="post">
+        Username: <input type="text" name="username"><br><br>
+        Password:  <input type="password" name="password"><br><br>
+        <input type="checkbox" name="keepLogin">Keep me logged in<br><br>
+        <button type="submit">Login</button>
+    </form>
+    <div>
+        <h3>New comer?</h3>
+        <a href="/register">Click here to register</a>
+    </div>
+</div>

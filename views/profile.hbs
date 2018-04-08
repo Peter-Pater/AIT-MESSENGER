@@ -1,0 +1,31 @@
+<div class="header">
+    <h1 class="left">Profile manager</h1>
+    <h1 class="right">AIT MESSENGER</h1>
+</div>
+<form id="profile-form" action="/edit" method="post">
+    <div id="profile-img">
+        <img id="img" src={{profile.img}}><br><br><br><br><br>
+        Set image link: <br><br><input id="newLink" type="text" name="img">
+        <br><br><button id="apply" type="button">Apply</button>
+    </div>
+    <div id="editor">
+        <em id="error"></em><br>
+        <div id="sub1">
+            Name: <input id="name" type="text" name="name"><br>
+            Age: <input id="age" type="text" name="age"><em>(0 - 150)</em><br>
+            Gender: <select name="gender">
+                <option value=""></option>
+                <option value="Male">male</option>
+                <option value="Female">female</option>
+                <option value="Unapplicable">unapplicable</option>
+            </select><br>
+            <!-- <input type="text" name="gender"><em>(male/female)</em><br> -->
+            Location: <input id="location" type="text" name="location">
+        </div>
+        <div id="sub2">
+            School: <input id="school" type="text" name="school"><br>
+            <button id="submit" type="submit">Confirm</button>
+        </div>
+    </div>
+</form>
+<script type="text/javascript" src="/js/profile.js"></script>

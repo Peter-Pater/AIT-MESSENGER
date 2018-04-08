@@ -1,0 +1,28 @@
+<script type="text/javascript" src="/js/register.js"></script>
+<div class="header">
+    <h1 class="left">REGISTER</h1>
+    <h1 class="right">AIT MESSENGER</h1>
+</div>
+<div class="login_reg">
+    <h1>Create your account:</h1><br>
+    {{#if err}}
+        <em>Duplicated/invalid Username or invalid password</em><br><br>
+    {{/if}}
+    <em id="error"></em><br id="break">
+    <form class="sign_in" action="/register" method="post">
+        Username: <input id="username" type="text" name="username"><br><br>
+        Password:  <input id="password" type="password" name="password"><br><br>
+        Confirm password:  <input id="confirm_password" type="password"><br><br>
+        Gender: <select name="gender">
+            <option value=""></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Unapplicable">Unapplicable</option>
+        </select><br><br>
+        <button id="submit" type="submit">Register</button>
+    </form>
+    <div>
+        <h3>Already have an account?</h3>
+        <a href="/login">Click here to log in</a>
+    </div>
+</div>

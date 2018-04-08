@@ -1,0 +1,77 @@
+<script src="/socket.io/socket.io.js"></script>
+<div class="header">
+    <input id="self" type="hidden" value={{name}}>
+    <h1 class="left">Hello, {{name}}</h1>
+    <h1 class="right">AIT MESSENGER</h1>
+</div>
+<div id="profile">
+    <img src={{profile.img}}>
+    <div>Name: {{profile.name}}<br><br>
+    Gender: {{profile.gender}}<br><br>
+    Age: {{profile.age}}<br><br>
+    School: {{profile.school}}<br><br>
+    Location: {{profile.location}}<br><br>
+    <a href="/home/profile"><button id="edit_profile">Edit profile</button></a><br><br>
+    <form action="/logout" method="post">
+        <button type="submit">Log out</button>
+    </form></div>
+</div>
+<!-- home page -->
+<div id="function">
+    <div id="contacts">
+        <div id="friend">
+            <div id="friend_title">
+                <p>Friends</p>
+            </div>
+            <div id="friend_list">
+
+            </div>
+        </div>
+        <div id="group">
+            <div id="group_title">
+                <p>Group</p>
+            </div>
+            <div id="group_info">
+                <br><br>
+                <p>A chatting room shared by all users</p>
+                <p>Users online:</p>
+                <h2 id="count">0</h2>
+                <a href="/home/group"><button>Enter</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="add">
+        <p>Search for new friends</p>
+        <div id="sub">
+            <div id="result">
+                <img id="profile_photo">
+                <div id="info">
+                    <p id="result_name"></p>
+                    <p id="result_gender"></p>
+                    <p id="result_age"></p>
+                    <p id="result_school"></p>
+                    <p id="result_location"></p>
+                </div>
+                <div id="result_buttons">
+                    <button id="previous">Previous</button><br>
+                    <button id="next">Next</button><br>
+                    <button id="add_friend">Add to contact</button>
+                </div>
+            </div>
+            <div id="search">
+                Name: <input id="search_name" type="text" name="name">
+                Gender: <select id="search_gender" name="gender">
+                    <option value=""></option>
+                    <option value="Male">male</option>
+                    <option value="Female">female</option>
+                    <option value="Unapplicable">unapplicable</option>
+                </select><br>
+                Age: <input id="search_age" type="text" name="age"><em>(0 - 150)</em><br>
+                School: <input id="search_school" type="text" name="school">
+                Location: <input id="search_location" type="text" name="location"><br>
+                <button id = "searchButton" type="button">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/home.js"></script>

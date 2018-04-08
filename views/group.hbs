@@ -1,0 +1,28 @@
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/group.js"></script>
+<div class="header">
+    <input id="self" type="hidden" value={{self}}>
+    <h1 class="left">Group</h1>
+    <h1 class="right">AIT MESSENGER</h1>
+</div>
+<div id="profile">
+    <img src={{profile.img}}>
+    <div>Name: {{profile.name}}<br><br>
+    Gender: {{profile.gender}}<br><br>
+    Age: {{profile.age}}<br><br>
+    School: {{profile.school}}<br><br>
+    Location: {{profile.location}}<br><br>
+    <a href="/home"><button>Back to home</button></a><br><br>
+    <form action="/logout" method="post">
+        <button type="submit">Log out</button>
+    </form></div>
+</div>
+<div id="indChat">
+    <div id="msgArea">
+
+    </div>
+    <div id="textEditor">
+        <textarea id="textArea" value=""> Edit your message here</textarea>
+        <button id="send">Send</button>
+    </div>
+</div>

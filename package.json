@@ -1,0 +1,36 @@
+{
+  "name": "xh721-final-project",
+  "version": "1.0.0",
+  "description": "Final project for AIT",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-003-fall-2017/xh721-final-project.git"
+  },
+  "author": "Xincheng Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-003-fall-2017/xh721-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-003-fall-2017/xh721-final-project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.12.6",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.4.0",
+    "readline-sync": "^1.4.7",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-plugin-mocha": "^4.11.0"
+  }
+}
